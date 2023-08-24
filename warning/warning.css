@@ -1,0 +1,27 @@
+table,
+td {
+    border: 0 solid black;
+}
+
+.image-top-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+table,
+th,
+td {
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('images/Warning_Page_Background.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #FF0000;
+}

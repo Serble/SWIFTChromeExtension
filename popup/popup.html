@@ -1,0 +1,77 @@
+<html lang="en-GB" dir="ltr">
+<head>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <script src="popup.js" defer></script>
+    <title>SWIFT</title>
+</head>
+<body id="body" tabindex="1" style="overflow: hidden;" class="">
+
+    <header class="Ext1HeaderText">
+        <img id="logo" class="HeaderLogo" src="../icons/name.png" alt="logo icon">
+<!--        <span style="color:#0000FF">SWIFT</span>-->
+    </header>
+
+    <div id="wrapper" class="Ext2Border">
+        <ul id="menu">
+            <li id="trust-button" class="enabled menu-item" role="button">
+                <div class="icon Ext2IconAlign"></div>
+                <span class="i18n_enabled_for_site"><strong>Trust</strong> this domain</span>
+            </li>
+
+            <li id="flag-button" class="menu-item clickhide" role="button">
+                <div class="icon Ext2IconAlign"></div>
+                <span class="i18n_easy_create_filter"><span class="i18n_enabled_for_site"><strong>Flag</strong> this domain</span></span>
+            </li>
+
+            <li id="clear-trust-box" class="menu-item" role="button">
+                <button id="clear-trusted" class="invisible-button">
+                    <span class="i18n_enabled_for_site"><strong>Clear Trusted Pages</strong></span>
+                </button>
+            </li>
+
+            <li id="clickhide-cancel" class="menu-item" role="button">
+                <div class="icon Ext2IconAlign"></div>
+                <span class="i18n_cancel">Cancel</span>
+            </li>
+
+            <li id="stats-container" class="Ext2CollapseItems">
+                <div class="menu-item collapse" data-option="show_statsinpopup" data-collapsable="stats-container" role="button">
+                    <div class="icon Ext2IconAlign"></div>
+                    <span class="i18n_stats_title">Trust Rating</span>
+                    <div class="collapse-icon-placeholder safari-inline-block"></div>
+                    <div class="collapse-icon"></div>
+                </div>
+                <ul id="stats" class="collapsable CollapseAlign">
+                    <li class="CollapseLiAlign">
+                        <div style="justify-content: center">
+                            <table>
+                                <tr>
+                                    <td>Trust:</td>
+                                    <td><strong id="trust-value">Loading...</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Votes:</td>
+                                    <td><strong id="votes-value">Loading...</strong></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+            <li id="get-premium" class="enabled menu-item" role="button">
+                <div class="icon Ext2IconAlign"></div>
+                <span class="i18n_enabled_for_site"><strong>Get Premium</strong></span>
+                <div class="icon Ext2IconAlign"></div>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <footer id="login-button" role="button" class="Ext3FooterBackgroundColor">
+        <span id="login-text" class="">Login</span>
+    </footer>
+
+</body>
+</html>
