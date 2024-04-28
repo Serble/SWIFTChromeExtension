@@ -139,6 +139,7 @@ chrome.runtime.onMessage.addListener(
                     // Update votes
                     document.getElementById('trust-value').innerText = "" + getSafetyScore(request.votes.safeScore, request.votes.unsafeScore) + "%";
                     document.getElementById('votes-value').innerText = "" + request.votes.totalVotes;
+                    document.getElementById('system-value').innerText = "" + request.votes.botRating + "%";
                 }
             });
         }
@@ -175,6 +176,7 @@ function obtainLoginStatus() {
             if (response.userObject.premium) {
                 premiumString = " (Premium)";  // Append "(Premium)" to the end of the username
                 document.getElementById("get-premium").style.display = "none";  // Remove get premium button
+                document.getElementById("bot-rating-box").style.display = "";  // Show bot rating box
                 document.getElementById("body").classList.add("premium-body");  // Set the background to premium
             }
             changeLoginButton("Logged in as " + response.userObject.username + premiumString, false);

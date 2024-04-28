@@ -1,9 +1,12 @@
 const redirect_url = chrome.identity.getRedirectURL();
 const client_id = '9277c54d-edb8-4b82-ad77-3211eb294683';
 const scope = 'user_info';
+
+// API URLs including a fallback in case the main one is blocked
 let backend_url = 'https://swiftbackend.serble.net';
 const fallback_backend_url = 'https://swiftbackend.zaneharrison.com';
 
+// OAuth URL including a fallback in case the main one is blocked
 let auth_url = 'https://serble.net/oauth/authorize?' +
     'client_id=' + client_id +
     '&response_type=token' +
@@ -17,6 +20,7 @@ const fallback_auth_url = 'https://serble.zaneharrison.com/oauth/authorize?' +
     '&scope=' + scope +
     '&state=';
 
+// Login state variables
 let loggedIn = false;
 let token = null;
 let userObject = null;
